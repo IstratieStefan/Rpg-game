@@ -39,13 +39,23 @@ public class SlimeAI : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if(isInChaseRange == false)
+        {
+            anim.SetBool("Running", isInChaseRange);
+        }
         if(isInChaseRange && !isInAttackRange)
         {
             MoveCharacter(movement);
         }
         if (isInAttackRange)
         {
+            speed = speed + (speed / 2);
+            anim.SetBool("Attacking",isInAttackRange);
             rb.velocity = Vector2.zero;
+        }
+        if (isInAttackRange == false)
+        {
+            anim.SetBool("Attacking", isInAttackRange);
         }
     }
 

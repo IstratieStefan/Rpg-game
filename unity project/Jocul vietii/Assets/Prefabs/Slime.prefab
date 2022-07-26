@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7364423363480867968}
   - component: {fileID: 7364423363480867983}
   - component: {fileID: 671500583783841267}
-  - component: {fileID: 7478842185804504897}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -85,7 +84,7 @@ SpriteRenderer:
   m_Size: {x: 0.375, y: 0.27083334}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &7364423363480867968
@@ -148,19 +147,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!70 &7478842185804504897
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7364423363480867971}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.375, y: 0.27083334}
-  m_Direction: 0
